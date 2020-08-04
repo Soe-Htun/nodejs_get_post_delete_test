@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>File uploading Form</title>
+        <link rel="stylesheet" href="upload.css">
+        <style>
+            label{
+                width: 100px;
+                height: 70px;
+                position: fixed;
+                background-color: aquamarine; 
+                padding: 20px 
+            }
+            /* #file_test{
+                display: none;  
+            } */
+            #submit{
+                position: relative;
+                margin-top: 130px;
+                background-color: #409eff;
+                border: none;
+                color: white;
+                height: 30px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>File Upload:</h3>
+        Select a file to upload: <br /><br>
+        <form action="http://localhost:8082/file_upload" method="POST" enctype="multipart/form-data">
+            <label for="file_test"> Select File
+                <input id="file_test" type="file" name="file" size="50" />
+            </label>
+
+            <input id="submit" type="submit" value="Upload File" />
+        </form>
+    </body>
+</html>

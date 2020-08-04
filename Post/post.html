@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="get.css">
+        <style>
+            input{
+                width: 300px;
+                height: 30px; 
+            }
+            .btn{
+                border: 1px solid #409EFF;
+                color: white;
+                background-color: #409EFF;
+                width: 100px;
+                height: 30px;
+                margin-left: 76px;
+            }
+        </style>
+    </head>
+   
+    <body>
+        <form action="http://localhost:8082/process_post" method="POST">
+            First Name: <input type="text" id="fname" name="first_name" /><br><br>
+            Last Name: <input type="text" id="lname" name="last_name" /> <br><br>
+            <button class="btn" onclick="submit()" type="button">Submit </button>
+            
+        </form>
+
+        <script>
+            function submit(){
+                document.getElementById('fname').value=''
+            }
+        </script>
+    </body>
+</html>
+
